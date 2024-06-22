@@ -51,9 +51,9 @@ with col2:
                 df = pd.DataFrame(dictx, index=[0], columns=["Quadrilateral","Circle","Triangle"])
                 st.bar_chart(df, use_container_width=True)
             else:
-                st.error("Please draw a fruit first.")
+                st.error("Please draw a shapes first.")
     else:
-        st.warning("Please draw a fruit first.")
+        st.warning("Please draw a shapes first.")
     
     st.write('---')
     st.write('**Note:**')
