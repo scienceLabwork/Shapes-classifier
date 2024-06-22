@@ -1,0 +1,8 @@
+numpy
+opencv_contrib_python==4.9.0.80
+opencv_python==4.7.0.72
+opencv_python_headless==4.8.0.74
+Pillow==10.3.0
+streamlit_drawable_canvas==0.9.3
+tensorflow==2.16.1
+pandas==2.2.2
