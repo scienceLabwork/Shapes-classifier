@@ -15,7 +15,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.title('Drawable Canvas')
-    st.write('Use the canvas drawing tool to draw a Square, Circle, and Triangle.')
+    st.write('Use the canvas drawing tool to draw a Quadrilateral, Circle, and Triangle.')
     canvas_result = st_canvas(
         fill_color="rgb(255, 165, 0)",  # Fixed fill color with some opacity
         stroke_width=10,
@@ -59,5 +59,5 @@ with col2:
     st.write('**Note:**')
     st.write('1. Draw a shape on the canvas.')
     st.write('2. Click the "Predict" button to predict the shape.')
-    st.write('3. The model can predict Square, Circle, and Triangle.')
+    st.write('3. The model can predict Quadrilateral, Circle, and Triangle.')
     st.write('4. This model is developed by [Rudra Shah](https://www.linkedin.com/in/rudra-shah-b044781b4/).')
