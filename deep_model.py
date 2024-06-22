@@ -13,7 +13,7 @@ def image_to_numpy(arr):
     return image
 
 def make_pred(arr):
-    labels = ["Square","Circle","Triangle"]
+    labels = ["Quadrilateral","Circle","Triangle"]
     emojis = ["🟥","🔵","🔺"]
     pred = model.predict(arr)
     return str(emojis[pred.argmax()] + " " + labels[pred.argmax()] + " " + str(round(pred.max() * 100, 2)) + "%"), pred
