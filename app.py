@@ -47,8 +47,8 @@ with col2:
                 arr = image_to_numpy(canvas_result.image_data)
                 output,pred = make_pred(arr)
                 st.success(f"Prediction: {output}")
-                dictx = {"Apple": pred[0][0], "Pineapple": pred[0][1], "Banana": pred[0][2]}
-                df = pd.DataFrame(dictx, index=[0], columns=["Apple", "Pineapple", "Banana"])
+                dictx = {"Quadrilateral": pred[0][0], "Circle": pred[0][1], "Triangle": pred[0][2]}
+                df = pd.DataFrame(dictx, index=[0], columns=["Quadrilateral","Circle","Triangle"])
                 st.bar_chart(df, use_container_width=True)
             else:
                 st.error("Please draw a fruit first.")
